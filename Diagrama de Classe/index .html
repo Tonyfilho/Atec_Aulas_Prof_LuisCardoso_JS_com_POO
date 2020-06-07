@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Classes</title>
+    <script src="Diagrama.js"></script>
+    <link rel="stylesheet" href="Diagrama.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+  <header><h2>Salarios de professores</h2></header>
+    <div class="corpo">
+      <div class="corpoInt">
+           
+   <label for="">Insira o Numero do Professor</label>
+   <input type="text" id="nProf">
+   <label for="">Insira o Nome</label>
+   <input type="text" id="nNome">
+   <label for="">Insira Morada</label>
+   <input type="text" id="nMorada">
+   <label for="">Insira Data de Nascimento</label>
+   <input type="text" id="nDataNasc">
+   <label for="">Insira NIF</label>
+   <input type="text" id="nNIF">
+   <label for="">Insira Segurança Social</label>
+   <input type="text" id="nSS">
+   <label for="">Insira Escalão</label>
+   <input type="text" id="nEscalao">
+   <label for="">Tempo de Serviço</label>
+   <input type="text" id="nTempo">
+   <label for="">Tipo de Contrato</label>
+   <select name="" id="nContrato">    
+       <option value="0">Contratado</option>
+       <option value="1">Efetivo</option>
+    </select>
+  <label for="">profissionalizado</label> 
+  <select name="" id="nProfissionalizado">    
+    <option value="1">Sim</option>
+    <option value="0">Não</option>
+  </select>
+   <input type="button" id="nEnviar" value="Salvar Professor" onclick="guardarProfessor()">      
+ 
+</div>  
+  </div>
+
+  <div class="botStrapUp">
+    
+
+ 
+
+
+
+  </div>
+
+
+
+<div class="botStrapBotton">
+
+  <table class="table table-dark" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Escalão</th>
+        <th scope="col">Salario</th>
+      </tr>
+    </thead>
+    <tbody id="bootProf">
+     <!--  é criado pela função carregaSelect -->
+    </tbody>
+  </table>
+
+</div>
+
+  <footer><h5>fim do programa de salario</h5></footer>  
+</body>
+</html>

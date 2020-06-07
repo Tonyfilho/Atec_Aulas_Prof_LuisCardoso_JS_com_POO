@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Classes</title>
+    <script src="Diagrama.js"></script>
+</head>
+<body>
+<!--  PROFESSOR    // nome class                               PROFESSORCONTRATADO
+#nProfessor: int                                               -(menos) PRIVADO, usa get/set para ter acesso
+#nome: string                                                  +(public) aberto a todos
+#morada: string                                                #(protect) aberto somente a class, e as class extendidas
+#dataNasc: date
+#nif: int
+#ss: int
+#escalao: int
+#tempoServico: int
+
++calculoSalario(mes:int):double
++toString():string
+-->
+
+<!-- Diagrama de classes
+
+--------------------------------------|
+Professor 			      |	
+--------------------------------------|
+#nProfessor: int		      |	
+#nome: string 			      |
+#morada: string		      |
+#dataNasc: date		      |
+#nif: int			              |
+#ss:int				      |
+#escalao:int			      |
+#tempoService:int		      |
+--------------------------------------|
+#CalculaSalario(mes, int): double     |
+#ToString() : string		      |
+--------------------------------------|
+	       /\
+		|---herança	
+----------------|---------------------|
+ProfessorContratado		      | - classe
+------------------------------------- |
+- profissionalidade: booleano	      | - atributos
+--------------------------------------|
++CalculaSalario(mes:int): double      | - métodos
++ToString().string		      |
+--------------------------------------|
+ -->
+
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{ font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.corpo{
+ width: 25%;
+ background-color: cornflowerblue;
+ margin: 1% 10%;
+ padding: 1% 5%;
+ height: 400px;
+ display: inline-block; 
+ height: auto;
+
+}
+
+.corpoInt{
+    width: 80%;
+}
+input, option,select {
+
+    display: block;
+    padding: 1% 10%;
+
+}

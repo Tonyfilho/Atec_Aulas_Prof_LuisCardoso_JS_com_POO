@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="Js.js"></script>
+
+    <title>POO com JavaScritp</title>
+</head>
+<body>
+    <!--  -->
+    <section class="menu">
+         <!--    pegar dados do ponto  -->
+            <div class="pontos">
+                <label for="">X</label>
+                <input type="text" id="txTX">
+                <label for="">Y</label>
+                <input type="text" id="txTY">
+                <button onclick="guardarPonto()">GUARDAR PONTO</button>
+                <select name="" id="selectPontos">
+                    <!-- <option value="">Pontos</option> -->
+                </select>
+                
+            </div>
+
+            <div class="linhas">
+                <label for="">LINHAS</label>                
+                <label for="">PONTO A</label>
+                <select  id="selectPontoA">
+                <option value="">Pontos</option>
+                    </select>
+                <label for="">PONTO B</label>
+                <select id="selectPontoB">
+                    <option value="">Pontos</option>
+                </select>
+                <button onclick="guardarLinha()">GUARDAR LINHAS</button>
+                <select  id="selectLinhas">
+                <option value="">Linhas</option>
+                </select>
+                <button onclick="desenhaLinha()">DESENHAR LINHA</button>
+            </div>
+
+            <div class="triangulo">
+                <label for="">LINHAS PARA TRIÂNGULO</label>                
+                <label for="">LINHA A</label>
+                <select  id="selectPontoTriA">
+                <option value="">Pontos Triângulo</option>
+                </select>
+                <label for="">LINHA B</label>
+                <select id="selectPontoTriB">
+                    <option value="">Pontos Triângulo</option>
+                </select>
+                <label for="">LINHA C</label>
+                <select id="selectPontoTriC">
+                    <option value="">Pontos Triângulo</option>
+                </select>
+                <button onclick="guardarTriangulo()">GUARDAR MEDIDAS TRIÂNGULO</button>
+                <select  id="selectLinhasTriangulo">
+                <option value="">Linhas</option>
+                </select>
+                <button onclick="desenhaTriangulo()">DESENHAR TRIÂNGULO</button>
+            </div>
+
+
+                   <!--    pegar dados do Retangulo  -->
+            <div class="retangulo">
+                   <label for="">PONTO INICIAL</label>                
+                   <label for="">LINHA A</label>
+                    <select  id="selectPontoRet">
+                    <option value="">Pontos Inicial</option>
+                    </select>
+                    <label for="">Width</label>
+                    <input type="text" id="rWidth">
+                    <label for="">Height</label>
+                    <input type="text" id="rHeight">               
+                    <button onclick="guardarRetangulo()">GUARDAR MEDIDAS RETÂNGULO</button>
+                <select  id="selectRetangulo">
+                    <option value="">Linhas</option>
+                </select>
+                    <button onclick="desenhaRetangulo()" id="">DESENHAR RETÂNGULO</button>                 
+                    
+            </div>
+            
+            <!--  pega quedrado -->
+
+            <div class="quadrado">
+                <label for="">PONTO INICIAL</label>                
+                <label for="">LINHA A</label>
+                 <select  id="selectPontoInicialQuadrados">
+                 <option value="">Pontos</option>
+                 </select>
+                 <label for="">LADO</label>
+                 <input type="text" id="txtLado">    
+
+                 <button onclick="guardarQuadrado()">GUARDAR MEDIDAS QUADRADO</button>
+             <select  id="selectQuadrados">
+                 <option value="">Quadrados</option>
+             </select>
+                 <button onclick="desenhaQuadrado()" id="">DESENHAR RETÂNGULO</button>                 
+                 
+         </div>
+
+    </section>
+    <section class="canvas">
+        <canvas id="myCanvas" >
+
+        </canvas>
+
+    </section>
+
+</body>
+</html>
